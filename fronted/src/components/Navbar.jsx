@@ -13,7 +13,7 @@ import Logout2 from './Logout2'
 import { ByBrand, CurrentPage, Sort ,ByCategory} from '../redux/men/action'
 import { woByBrand, woByCategory, woCurrentPage, woSort } from '../redux/women/action'
 import logo from '../images/logo.svg'
-import ButtonSigupNav from './ButtonSigupNav'
+import ButtonSignupNav from './ButtonSignupNav'
 
 const Navbar = () => {
   const {token,data,wdata,totalCartItem,WishListData,name,totalWishListItem,category} = useSelector(store=>{
@@ -199,7 +199,7 @@ const Navbar = () => {
        
          <Center  fontWeight="600" h="85%" ml="0.5rem"  mt="0.1rem" >
            {/* <RouteLink to="/signup" > */}
-                 { token==false?  <ButtonSigupNav />: <Logout   />     }
+                 { token==false?  <ButtonSignupNav />: <Logout   />     }
             {/* </RouteLink> */}
          </Center>
         
